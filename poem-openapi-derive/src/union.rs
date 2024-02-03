@@ -155,7 +155,7 @@ pub(crate) fn generate(args: DeriveInput) -> GeneratorResult<TokenStream> {
                                             #crate_name::registry::MetaSchemaRef::merge(
                                                 <::std::string::String as #crate_name::types::Type>::schema_ref(),
                                                 #crate_name::registry::MetaSchema {
-                                                    enum: ::std::vec!(::std::convert::Into::into(#mapping_name)),
+                                                    enum_items: ::std::vec!(::std::convert::Into::into(#mapping_name)),
                                                     ..#crate_name::registry::MetaSchema::ANY
                                                 }
                                             )
